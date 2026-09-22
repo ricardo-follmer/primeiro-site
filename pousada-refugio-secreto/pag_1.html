@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .mapa{
+            border: 20px solid;
+        }
+    </style>
     <title>Home - Pousada Refúgio Secreto</title>
 </head>
-
 <body>
+<!-- Cabeçalho + Menu de navegação-->
     <header> 
-        <div class="banner_pagina">
+        <div class="cabecalho">
             <img src="media/imagem/Logo - Prototipo.png" alt="Logo" width="200" height="200">
             <nav class="menu">
                 <ul>
@@ -20,25 +25,52 @@
             </nav>
         </div>
     </header>
-    <section class="destaque"> <!-- Parte 1 -->
-        <h2>Área de Destaque</h2>
-        
-        <p>
-        Nesse campo irei colocar uma area de destaque sugerindo uma reserva (Direcionando para pagina 3)
-        </p>
-
-        <a href="pag_2.html">Veja mais</a>
-        
-    </section>
-    <section> <!-- Parte 2 -->
-        <h1> Sobre a nossa pousada</h1>
-        <div class="texto_apresentação">
-            <p> Nossa pousada ... (Breve texto explicando a história da pousada) </p>
-
+<main>
+<!-- Area de destaque-->
+    <section class="destaque">
+        <div class="texto_destaque">
+        <h1>Venha viver uma experiência única</h1>
+        <p> Desconecte-se da rotina e aproveite momentos de tranquilidade e aconchego com quem você ama. </p>
+        </div>
+        <!---------------------------------------->
+        <div class="imagem_destaque">
+        <!-- Inserir uma imagem ou vídeo -->
+        <img src="" alt="imagem_destaque">
         </div>
     </section>
-    <footer>
-        <h1> Informações da pousada </h1>
+<!--------------------------------------------------------------------->
+    <section> <!-- Banner direcionando para a pagina de hospedagem -->
+        <div class="banner_pagina">
+            <a href="pag_2.html"><img src="media/imagem/banner_principal.png" alt="banner_principal" width="300" height="300"></a>
+        </div>
+    </section>
+<!--------------------------------------------------------------------->
+    <section> <!-- Adicionar um Iframe com a localização -->
+        <h2> Localização</h2>
+        <div class="localizacao">
+        <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2005.8965253047784!2d-51.28716992880955!3d-29.230047257881367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea11501e22ffd%3A0x9e492f6fd0d0fac1!2sIn%C3%ADcio%20da%20Trilha!5e1!3m2!1spt-BR!2sbr!4v1790085006266!5m2!1spt-BR!2sbr" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+        </div>
+    </section>
+</main>
+<!--------------------------------------------------------------------->
+    <footer> <!-- Rodapé-->
+        <div class="sobre">
+            <h3> Sobre nós </h3>
+            <p> A Pousada Refúgio Secreto foi fundada em 2024 com o intuito de proporcionar uma experiência única de bem-estar e descanso, tornando-se um refúgio para aqueles que desejam fugir do caos da cidade e se reconectar com a natureza.</p>
+        </div>
+        <div class="contato">
+            <p> Instagram: @pousadarefúgiosecreto </p> 
+            <p> WhatsApp: 51 99999-9999 </p> 
+            <p> E-mail: pousadarefugiosecreto@gmail</p>  
+        </div>
     </footer>
-</body>
-</html>
+        </body>
+            </html>
