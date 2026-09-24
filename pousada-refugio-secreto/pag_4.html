@@ -6,15 +6,47 @@
     <title>Home - Pousada Refúgio Secreto</title>
 </head>
 <body>
-    <nav>
-    <ul>
-    <li><a href="pag_1.html"> Início </a></li>
-    <li><a href="pag_2.html"> Experiências </a></li>
-    <li><a href="pag_3.html"> Acomodações </a></li>
-    <li><a href="pag_4.html"> Entrar/Cadastro </a></li>
-    </ul>
-</nav> 
+<header>
+    <div class="cabecalho"> 
+        <img src="media/imagem/Logo - Prototipo.png" alt="Logo" width="200" height="200">
+        Pousada Refúgio Secreto
+        <nav>
+            <ul>
+                <li><a href="pag_1.html"> Início </a></li>
+                <li><a href="pag_2.html"> Experiências </a></li>
+                <li><a href="pag_3.html"> Acomodações </a></li>
+                <li><a href="pag_4.html"> Reserva </a></li>
+            </ul>
+        </nav>      
+</header> 
+<main>
+    <h1> FAÇA SUA RESERVA AGORA </h1>
+    <section class="formulario">
+        <form class="reserva">
+            <fieldset>
+                <label for="name">Nome Completo: </label>
+                <input type="text" name="nome" id="name" required><br><br>
+                <label for="email"> E-mail: </label>
+                <input type="email" name="email" id="email" required><br><br>
+                <p>Seleciona acomodação desejada: </p>
+                <select name="acomodacao" id="acomodacao">
+                    <option value="sozinho">Quarto Solo</option>
+                    <option value="casal">Quarto Casal</option>
+                    <option value="familia">Quarto familia</option>
+                </select><br><br>
+                <h2> Entrada / Saída </h2>
+                <label for="entrada"> Check-in </label>
+                <input type="date" name="entrada" id="entrada" min="2026-01-01" max="2027-12-31"><br><br>
+                <label for="saida"> Check-on </label>
+                <input type="date" name="saida" id="saida"><br><br>
+                <label for="hospedes"> Quantos Hospedes</label>
+                <input type="number" name="hospedes" id="hospedes" min="1" max="15"><br><br>
+                <p>Tipo de reserva </p>
 
-PAGINA 4
+            </fieldset>
+        </form>
+
+    </section>
+</main>
 </body>
 </html>
